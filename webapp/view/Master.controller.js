@@ -2,13 +2,13 @@ jQuery.sap.require("jerrylist.util.Formatter");
 jQuery.sap.require("jerrylist.util.Grouper");
 sap.ui.controller("jerrylist.view.Master", {
 
-	handleListItemPress : function (evt) {
-		console.error("Jerry clicks list item");
-		var context = evt.getSource().getBindingContext();
-		this.nav.to("Detail", context);
-	},
-	
-	handleSearch : function (evt) {
+    handleListItemPress: function (evt) {
+        console.error("Jerry clicks list item");
+        var context = evt.getSource().getBindingContext();
+        this.nav.to("Detail", context);
+    },
+
+    handleSearch: function (evt) {
 		
 		// create model filter
 		var filters = [];
